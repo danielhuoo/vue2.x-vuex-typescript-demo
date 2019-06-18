@@ -1,28 +1,52 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+    <div id="app">
+        <el-row>
+            <el-col :span="12">
+				<boyComp class="boy"></boyComp>
+			</el-col>
+            <el-col :span="12">
+				<girlComp class='girl'></girlComp>
+			</el-col>
+        </el-row>
+    </div>
 </template>
 
-<script>
-import HelloWorld from './components/HelloWorld.vue'
-
-export default {
-  name: 'app',
-  components: {
-    HelloWorld
-  }
-}
+<script lang="ts">
+import { Component, Vue } from "vue-property-decorator";
+import boyComp from "./components/boy.vue";
+import girlComp from "./components/girl.vue";
+@Component({
+    components: {
+        boyComp,
+        girlComp
+    }
+})
+export default class App extends Vue {}
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+*{
+	margin: 0;
+	padding: 0
+}
+html,
+body,
+#app,
+.el-row,
+.el-col,
+.boy,
+.girl {
+    height: 100%;
+	color:white;
+	font-size: 40px;
+	text-align: center
+}
+
+.boy{
+	background: #409EFF
+}
+
+.girl{
+	background: #F56C6C
 }
 </style>
