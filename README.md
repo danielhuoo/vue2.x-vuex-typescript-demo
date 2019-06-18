@@ -2,6 +2,8 @@
 # vue2.x-vuex-typescript-demo
 >  A demo for explaining how to integrate typescript into a vue2.x project with vuex
 
+案例源代码: https://github.com/danielhuoo/vue2.x-vuex-typescript-demo
+
 ## 前言
 相信很多人都像我一样，学习使用了`vuex`后，想把项目改写成`Typescript`。但是官方教程要么晦涩难懂，要么缺少鲜活的例子。我花了一天时间，总结出了一些经验。在此分享出来。
 
