@@ -267,7 +267,7 @@ export default {
 
 在安装之前，请一定要先做备份。因为安装后`App.vue`会被改写。
 ```bash
-yarn add vuex-classß
+yarn add vuex-class
 vue add typescript
 ? Use class-style component syntax? (Y/n)  Yes
 ? Use Babel alongside TypeScript for auto-detected polyfills? (Y/n) Yes
